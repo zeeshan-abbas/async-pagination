@@ -1,8 +1,10 @@
 {
+  "name": "react-select-async-paginate",
+  "version": "0.4.1",
+  "main": "packages/react-select-async-paginate/lib/index.js",
+  "module": "packages/react-select-async-paginate/es/index.js",
+  "typings": "packages/react-select-async-paginate/ts/index.d.ts",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "repository": "git@github.com:vtaits/react-select-async-paginate.git",
   "author": "Vadim Taits",
   "license": "MIT",
@@ -16,6 +18,12 @@
     "test": "yarn lint && yarn test:ts && yarn test:unit",
     "validate": "yarn build && yarn lint && yarn test:ts && yarn test:unit:cov",
     "codecov": "yarn workspaces run codecov"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@seznam/compose-react-refs": "^1.0.4",
+    "react-is-mounted-hook": "^1.0.3",
+    "sleep-promise": "^8.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
